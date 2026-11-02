@@ -97,3 +97,121 @@
     background-position: center !important;
     background-repeat: no-repeat !important;
 }
+
+.SocialBarInner { /* Title */
+    background-color: transparent !important;
+    width: auto !important;
+    scrollbar-width: none !important;
+}
+
+.SocialBarIdentityTop {
+    justify-content: center !important;
+}
+
+.SocialBarContainer.Docked {
+    width: auto !important;
+}
+
+.SocialBarFooter { /* Footer */
+    background-color: #00000000 !important;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    width: 20rem !important;
+    left: 100%;
+    transform: translateX(-100%);
+    border: none !important;
+}
+
+.HomePageBackground {
+    height: 0rem !important;
+    filter: none !important;
+}
+
+/* Online Players */
+
+.HomeTitleCcu {
+    background-color: transparent !important;
+}
+
+.TitleContainerBottom {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    margin: 1rem !important;
+    align-items: center !important;
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 0rem !important;
+    justify-content: center;
+}
+
+/* Notifications */
+
+.NotificationBellContainer {
+    width: 0px !important;
+    height: 0px !important;
+    position: fixed;
+    opacity: 0 !important;
+    right: 2222rem !important;
+}
+
+.NotificationBell {
+    font-size: 0rem !important;
+    width: 0rem !important;
+    height: 0rem !important;
+    right: 2222rem !important;
+    position: fixed !important;
+    opacity: 0 !important;
+}
+
+/* Main middle part */
+
+.HomePageInnerLeft {
+    gap: 0.2rem !important;
+}
+
+/* Top Elements */
+
+.HomePagePartyBar {
+    background-color: #00000073 !important;
+}
+
+.ActionShortcutBarElement {
+    background-color: #00000073 !important;
+}
+
+.JoinPartyHashtag {
+    background-color: #000000 !important;
+}
+
+/* Terms of service text */
+
+.HomePageFooter {
+    display: flex;
+    gap: 0rem !important;
+    padding: 0rem !important;
+    opacity: 0 !important;
+    width: 0rem !important;
+    height: 0rem !important;
+    position: fixed !important;
+    right: 2222rem !important;
+}
+
+/* Custom Games Category top window */
+
+.CategoryGameListHeader {
+    background-color: #0000002d !important;
+}
+
+.Pagination {
+    background-color: #0000002d !important;
+    border: none !important;
+}
+
+/* Links */
+
+.LinksPopupLink {
+    background: #00000036 !important;
+    border: none !important;
+}
