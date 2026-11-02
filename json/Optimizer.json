@@ -1,18 +1,15 @@
 [
-  {
-  "group": "Links:",
-  "type": "link",
-  "label": "Use Online Images:",
-  "text": "Freeimage Host",
-  "link": "https://freeimage.host"
-  },
 
-  {
-  "group": "Layout:",
-  "selector": ".Optimizer",
-  "type": "image",
-  "label": "Optimizer",
-  "property": "background-image",
-  "unit": "url"
-  }
+{
+    "group": "Layout:",
+    "selector": ".CenteredDivMiddle",
+    "type": "checkbox",
+    "id": "iconHelper",
+    "label": "Show Custom Games",
+    "property": "display",
+    "enabled": "gap: unset; height: auto; overflow: visible;",
+    "disabled": "gap: 2000rem; height: 200vw; overflow: hidden; flex-grow: 0;",
+    "default": false
+}
+
 ]
