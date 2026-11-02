@@ -9,10 +9,22 @@
 
   {
   "group": "Layout:",
-  "selector": ".Background",
+  "selector": ".HomePageBackgroundContainer",
   "type": "image",
-  "label": "Background Image",
+  "label": "Background",
   "property": "background-image",
   "unit": "url"
+  },
+
+  {
+    "group":"Effects:",
+    "selector": ".HomePageBackgroundContainer",
+    "type": "slider",
+    "label": "Background Blur",
+    "property": "filter",
+    "filter": "blur",
+    "min": 0,
+    "max": 10,
+    "step": 1
   }
 ]
