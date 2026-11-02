@@ -1,0 +1,67 @@
+[
+  {
+  "group": "Links:",
+  "type": "link",
+  "label": "Use Online Images:",
+  "text": "Freeimage Host",
+  "link": "https://freeimage.host"
+  },
+
+  {
+  "group": "Layout:",
+  "selector": ".Title",
+  "type": "image",
+  "label": "Title Image",
+  "property": "background-image",
+  "unit": "url"
+  },
+
+  {
+    "group": "Layout:",
+    "selector": ".Title",
+    "type": "slider",
+    "label": "Size",
+    "property": "background-size",
+    "unit": "rem",
+    "min": 0,
+    "max": 30,
+    "step": 1
+  },
+
+  {
+    "group": "Layout:",
+    "selector": ".Title",
+    "type": "slider",
+    "label": "Width",
+    "property": "width",
+    "unit": "rem",
+    "min": 0,
+    "max": 30,
+    "step": 1
+  },
+
+  {
+    "group": "Layout:",
+    "selector": ".Title",
+    "type": "slider",
+    "label": "Height",
+    "property": "line-height",
+    "unit": "rem",
+    "min": 0,
+    "max": 7,
+    "step": 1
+  },
+
+  {
+    "group": "Effects:",
+    "selector": ".TitleContainer",
+    "type": "slider",
+    "label": "Opacity",
+    "property": "opacity",
+    "unit": "",
+    "min": 0.0,
+    "max": 1.0,
+    "step": 0.05,
+    "default": 1
+  }
+]
