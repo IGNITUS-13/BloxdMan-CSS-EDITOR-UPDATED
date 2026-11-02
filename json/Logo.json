@@ -9,7 +9,7 @@
 
   {
   "group": "Layout:",
-  "selector": ".Logo",
+  "selector": ".LogoLoader",
   "type": "image",
   "label": "Logo Image",
   "property": "background-image",
