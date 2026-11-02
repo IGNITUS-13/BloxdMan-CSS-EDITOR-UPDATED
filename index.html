@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloxd CSS Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="wallpaper"></div>
+
+    <!-- MENU -->
+    <div id="menu" class="everything visible">
+
+        <div class="CssTitle">Bloxd.io CSS Customizer</div>
+
+        <div class="group">
+
+            <button class="window recommended" onclick="openPreset('Optimizer')">
+                <span class="recommended-badge">RECOMMENDED</span>
+                <div class="picture" style="background-image: url(https://iili.io/nEZIx3B.jpg);"></div>
+                <div class="Name">Optimizer</div>
+            </button>
+
+            <button class="window" onclick="openPreset('SocialBar')">
+                <div class="picture" style="background-image: url(https://iili.io/nh9235N.png);"></div>
+                <div class="Name">Social Bar</div>
+            </button>
+
+            <button class="window" onclick="openPreset('Profile')">
+                <div class="picture" style="background-image: url(https://iili.io/nEgt8SR.png); scale: 1.1;"></div>
+                <div class="Name">Profile Name</div>
+            </button>
+
+            <button class="window" onclick="openPreset('DragonBar')">
+                <div class="picture" style="background-image: url(https://iili.io/CET6wZl.png);"></div>
+                <div class="Name">Dragon Bar</div>
+            </button>
+
+            <button class="window" onclick="openPreset('HealthBar')">
+                <div class="picture" style="background-image: url(https://iili.io/C13On0F.png);"></div>
+                <div class="Name">Health Bar</div>
+            </button>
+
+            <button class="window" onclick="openPreset('Hotbar')">
+                <div class="picture" style="background-image: url(https://iili.io/C13Srf2.png);"></div>
+                <div class="Name">Hotbar</div>
+            </button>
+
+            <button class="window" onclick="openPreset('Background')">
+                <div class="picture" style="background-image: url(https://iili.io/Cw4NJfI.jpg);"></div>
+                <div class="Name">Background</div>
+            </button>
+
+            <button class="window" onclick="openPreset('Logo')">
+                <div class="picture" style="background-image: url(https://iili.io/CTha8tj.png); 
+                border-radius: 100%; 
+                margin: auto;
+                width: 4rem;
+                height: 4rem;">
+                </div>
+                <div class="Name">Logo</div>
+            </button>
+
+            <button class="window" onclick="openPreset('Crosshair')">
+                <div class="picture" style="background-image: url(https://iili.io/2sByfst.png); background-size: 3.5rem;"></div>
+                <div class="Name">Crosshair</div>
+            </button>
+
+            <button class="window" onclick="openPreset('AuraBar')">
+                <div class="picture" style="background-image: url(https://iili.io/C168V8N.png);"></div>
+                <div class="Name">AuraBar</div>
+            </button>
+
+            <button class="window" onclick="openPreset('Title')">
+                <div class="picture" style="background-image: url(https://iili.io/Ks4RSyv.png);"></div>
+                <div class="Name">Title</div>
+            </button>
+
+            <button class="window" onclick="openPreset('IconHelper')">
+                <div class="picture" style="background-image: url(https://iili.io/CETwJgp.png); background-size: 6rem;"></div>
+                <div class="Name">KeyboardBadge</div>
+            </button>
+
+        </div>
+
+        <div class="Foot">
+            <div style="color: gray">Follow more</div>
+
+            <div class="LinksContainer">
+                <span 
+                    class="FollowLink" 
+                    style="color: red; 
+                    font-weight: bold; 
+                    text-shadow: 0 0 3px rgb(223, 0, 0);" 
+                    onclick="window.open('https://www.youtube.com/@Bloxdman', '_blank')"
+                    > YouTube </span>
+                <span 
+                    class="FollowLink" 
+                    style="color: rgb(88 42 255); 
+                    font-weight: bold; 
+                    text-shadow: 0 0 3px rgb(57, 27, 163);" 
+                    onclick="window.open('https://discord.gg/NeH9jhKcYf', '_blank')"
+                    > Discord </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- EDITOR PAGE -->
+    <div id="editorPage" class="editorPage hidden">
+
+        <div class="BackButtonContainer">
+            
+            <button class="button BackButton" onclick="goBack()">
+            ← Back
+        </button>
+
+        <div class="EverythingContainer">
+
+
+            <div id="EditorPage" class="Container"> 
+
+                <div></div>
+
+                <div class="MainAreaContainer">
+
+                    <div class="MiddleButtonContainer">
+
+                        <button class="button" id="PreviewBtn" onclick="viewEditor()">Preview</button>
+
+                        <button class="button" id="CodeBtn" onclick="viewCode()">Code</button>
+
+                    </div>
+
+                    <div class="ResultsContainer">
+
+                    <div class="PreviewContainer">
+                        <div class="preview" id="preview"></div>
+                    </div>
+
+                    <div class="editor">
+
+                    <div class="controls" id="controls"></div>
+
+                    <div class="buttons">
+                        <button class="button copyBtn">Copy</button>
+                        <button class="button downloadBtn">Download</button>
+                        <button class="button resetBtn">Reset</button>
+                    </div>
+
+                </div>
+
+
+                </div>
+
+            </div>
+
+            <div></div>
+
+        </div>
+
+        <div id="CodePage" class="CodePage hidden">
+
+                <div class="MiddleButtonContainer">
+
+                    <button class="button" id="PreviewBtn" onclick="viewEditor()">Preview</button>
+
+                    <button class="button" id="CodeBtn" onclick="viewCode()">Code</button>
+
+                </div>
+
+                <textarea id="cssEditor"></textarea>
+
+                <div class="buttons">
+                        <button class="button copyBtn">Copy</button>
+                        <button class="button downloadBtn">Download</button>
+                        <button class="button resetBtn">Reset</button>
+                </div>
+                
+        </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Live CSS injection -->
+    <style id="liveStyle"></style>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
