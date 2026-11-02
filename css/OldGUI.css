@@ -1,0 +1,99 @@
+/* Party Buttons */
+
+.JoinPartyButton {
+    color: #ffffff !important;
+}
+
+.PurpleSecondaryButton {
+    color: #ffffff !important;
+}
+
+/* Settings */
+
+.EverythingMenuBannerDiv {
+    background-color: transparent !important;
+    display: none !important;
+    height: 0 !important;
+    pointer-events: none !important;
+    width: 0 !important;
+}
+
+/* Background */
+
+.HomePageInner {
+    display: flex !important;
+    justify-content: space-around !important;
+    position: relative !important;
+    flex-wrap: nowrap !important;
+    flex-direction: column !important;
+}
+
+.HomePageInnerRight {
+    background-color: transparent !important;
+}
+
+/* Main Changes */
+
+.SocialBarInner {
+    scrollbar-width: none !important;
+    margin: none !important;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.SocialBarSection {
+    width: auto;
+    border: none !important;
+}
+
+/* Party Bar */
+
+.SocialBarPartySection { /* Party Bar */
+    position: fixed !important;
+    bottom: 0 !important;
+    transform: translateX(-50%) !important;
+    width: auto !important;
+    left: 50% !important;
+    border: none !important;
+}
+
+.PartyBar .PartyJoinCreate, .PartyBar .PartyJoinCreate .PartyCodeEntryRow {
+    align-items: stretch !important;
+    display: flex !important;
+    gap: .5rem !important;
+    min-width: 0 !important;
+    flex-direction: row !important;
+}
+
+.CreatePartyButton {
+    width: 9rem !important;
+}
+
+.PartyBar {
+    background-color: #00000000 !important;
+}
+
+.PartyCodeEntryRow {
+    align-items: stretch;
+    display: flex;
+    gap: .5rem;
+    min-width: 0;
+    flex-direction: row !important;
+}
+
+.SocialBarBody { /* Friend List */
+    background-color: #0000007a !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 25vw !important;
+    height: 30% !important;
+    margin: 1rem;
+    border-radius: 2rem !important;
+    box-shadow: none;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
