@@ -1,0 +1,177 @@
+[
+
+{
+  "group": "Effects:",
+  "selector": ".OwnProfilePreviewCard",
+  "type": "checkbox",
+  "id": "backGradient",
+  "label": "Enable Gradient",
+  "property": "background-image",
+  "enabled": "linear-gradient(23deg, #000000 0%, #b8b8b8 100%)",
+  "disabled": "none",
+  "default": true
+},
+
+{
+  "group": "Effects:",
+  "selector": ".OwnProfilePreviewCard",
+  "type": "checkbox",
+  "id": "backShadow",
+  "label": "Enable Inner Shadow",
+  "property": "box-shadow",
+  "enabled": "0 0 10px #00000085, inset 0 0 15px #000000",
+  "disabled": "none",
+  "default": false
+},
+
+{
+  "group": "Layout:",
+  "selector": ".OwnProfilePreview",
+  "type": "slider",
+  "label": "Profile Width",
+  "property": "width",
+  "unit": "rem",
+  "min": 15,
+  "max": 25,
+  "step": 1,
+  "default": 18
+},
+
+{
+  "group": "Colors:",
+  "selector": ".OwnProfilePreviewCard",
+  "type": "gradientColor",
+  "toggle": "backGradient",
+  "label": "Gradient 1",
+  "property": "background-image",
+  "index": 0
+},
+
+{
+    "group": "Colors:",
+    "selector": ".OwnProfilePreviewCard",
+    "type": "gradient-opacity",
+    "label": "Opacity",
+    "property": "background-image",
+    "index": 0
+},
+
+{
+  "group": "Colors:",
+  "selector": ".OwnProfilePreviewCard",
+  "type": "gradientColor",
+  "toggle": "backGradient",
+  "label": "Gradient 2",
+  "property": "background-image",
+  "index": 1
+},
+
+{
+    "group": "Colors:",
+    "selector": ".OwnProfilePreviewCard",
+    "type": "gradient-opacity",
+    "label": "Opacity",
+    "property": "background-image",
+    "index": 1
+},
+
+{
+    "group": "Back Colors:",
+    "selector": ".OwnProfilePreviewCard",
+    "type": "color",
+    "label": "Background Color",
+    "property": "background-color"
+},
+
+{
+    "group": "Back Colors:",
+    "selector": ".OwnProfilePreviewCard",
+    "type": "color-opacity",
+    "label": "Opacity",
+    "property": "background-color"
+},
+
+{
+    "group": "Back Colors:",
+    "selector": ".OwnProfilePreviewCard",
+    "type": "slider",
+    "label": "Border Radius",
+    "property": "border-radius",
+    "unit": "rem",
+    "min": 0.0,
+    "max": 3.0,
+    "step": 0.1,
+    "default": 0.0
+},
+
+  {
+    "group": "Back Colors:",
+    "selector": ".OwnProfilePreviewCard",
+    "type": "slider",
+    "label": "Border Width",
+    "property": "border",
+    "unit": "rem solid",
+    "min": 0.0,
+    "max": 1.0,
+    "step": 0.1,
+    "default": 0.1
+  },
+
+  {
+    "group": "Back Colors:",
+    "selector": ".OwnProfilePreviewCard",
+    "type": "color",
+    "label": "Border Color",
+    "property": "border-color"
+  },
+
+  {
+    "group": "Back Colors:",
+    "selector": ".OwnProfilePreviewCard",
+    "type": "color-opacity",
+    "label": "Opacity",
+    "property": "border-color"
+  },
+
+  {
+    "group":"Warning Box:",
+    "selector": ".OwnProfilePreviewLoginWarning",
+    "type": "checkbox",
+    "id": "warningBox",
+    "label": "Enable Warning Box Top Border",
+    "property": "border-top",
+    "enabled": ".2rem solid #f2f2f233",
+    "disabled": "none",
+    "default": true
+  },
+
+  {
+    "group": "Warning Box:",
+    "selector": ".OwnProfilePreviewLoginWarning",
+    "type": "color",
+    "label": "Background Color",
+    "property": "background-color"
+  },
+
+  {
+    "group": "Warning Box:",
+    "selector": ".OwnProfilePreviewLoginWarning",
+    "type": "color-opacity",
+    "label": "Opacity",
+    "property": "background-color"
+  },
+
+  {
+    "group": "Warning Box:",
+    "selector": ".OwnProfilePreviewLoginWarning",
+    "type": "slider",
+    "label": "Border Radius",
+    "property": "border-radius",
+    "unit": "rem",
+    "min": 0.0,
+    "max": 2.0,
+    "step": 0.1,
+    "default": 0.0
+  }
+
+]
